@@ -25,15 +25,16 @@ function rotateYY() {
 
     let ben = Math.floor(Math.random() * 10);
 
-    if (ben != -10)
+    if (ben == 9)
     {
         let img = document.createElement("img");
         img.src = "images/benShapiro.jpg";
-        img.width = '739';
-        img.height = '415';
+        img.width = '90';
+        img.height = '51';
         img.style.position = 'absolute';
         img.style.left = Math.floor(Math.random() * w + 1) + 'px';
         img.style.top = Math.floor(Math.random() * h + 1) + 'px';
+        img.style.zIndex = '0';
         document.body.appendChild(img);
     }
 
