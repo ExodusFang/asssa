@@ -29,8 +29,8 @@ function rotateYY() {
     {
         let img = document.createElement("img");
         img.src = "images/benShapiro.jpg";
-        img.width = '90';
-        img.height = '51';
+        img.width = '90px';
+        img.height = '51px';
         img.style.position = 'absolute';
         img.style.left = Math.floor(Math.random() * w + 1) + 'px';
         img.style.top = Math.floor(Math.random() * h + 1) + 'px';
