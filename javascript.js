@@ -48,26 +48,25 @@ function spawnBen() {
 }
 
 
-function rdmisePos() {
+async function rdmisePos() {
     
     if (curr_yy == 1)
     {
         while (curr_yy == 1)
         {
             for (let i = 0; i < text.length; i++) {
-                // text[i].classList.add("new");
                 text[i].style.position = "fixed";
                 text[i].style.left = Math.floor(Math.random() * w + 1) + 'px';
                 text[i].style.top = Math.floor(Math.random() * h + 1) + 'px';
+                console.log(i);
             }
-            sleep(3000);
+            await new Promise(r => setTimeout(r, 3000));
         }
     
     }
     else
     {
         for (let i = 0; i < text.length; i++) {
-            // text[i].classList.add("new");
             text[i].style.removeProperty("position");
             text[i].style.removeProperty("left");
             text[i].style.removeProperty("top");
