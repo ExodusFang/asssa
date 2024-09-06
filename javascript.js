@@ -51,17 +51,18 @@ function spawnBen() {
 function rdmisePos() {
     
 
-    // while (curr_yy == 1)
-    // {
-
-    // }
-    for (let i = 0; i < text.length; i++) {
-        // text[i].classList.add("new");
-        text[i].style.position = "fixed";
-        text[i].style.left = Math.floor(Math.random() * w + 1) + 'px';
-        text[i].style.top = Math.floor(Math.random() * h + 1) + 'px';
-        console.log(text[i].style.left + " " + text[i].style.top + "\n");
+    while (curr_yy == 1)
+    {
+        for (let i = 0; i < text.length; i++) {
+            // text[i].classList.add("new");
+            text[i].style.position = "fixed";
+            text[i].style.left = Math.floor(Math.random() * w + 1) + 'px';
+            text[i].style.top = Math.floor(Math.random() * h + 1) + 'px';
+            console.log(text[i].style.left + " " + text[i].style.top + "\n");
+        }
+        sleep(3000);
     }
+    
 }
 
 
