@@ -14,7 +14,7 @@ body {
 }
 
 
-p {
+p, li {
     font-family: "Roboto";
 }
 
